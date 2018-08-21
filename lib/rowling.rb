@@ -1,5 +1,4 @@
 require "rowling/version"
-require "rowling/parser"
-require "rowling/scorer"
+require "rowling/score"
 require "rowling/display"
 require "rowling/app"

@@ -1,9 +1,7 @@
 module Rowling
   class App
     def self.run(game_file_path)
-      game = Rowling::Parser.parse(game_file_path)
-      score = Rowling::Scorer.score(game)
-      Rowling::Display.display(score)
+      Rowling::Display.display Rowling::Score.parse_and_score(game_file_path)
     end
   end
 end
