@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require 'rowling'
+
+def print_usage
+  puts "#{File.basename($0)} - Score a game of ​ten-pin bowling​."
+  puts
+  puts "Usage: #{File.basename($0)} <gamefile>"
+  puts " where <gamefile> is path to a game file"
+  puts
+end
+
+if ARGV.length < 1
+  print_usage
+else
+  game_file_path = ARGV[0]
+  Rowling::App.run(game_file_path)
+end
