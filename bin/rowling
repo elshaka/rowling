@@ -14,5 +14,5 @@ if ARGV.length < 1
   print_usage
 else
   game_file_path = ARGV[0]
-  Rowling::App.run(File.dirname(__FILE__) + game_file_path)
+  Rowling::App.run(game_file_path)
 end
